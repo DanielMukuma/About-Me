@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Mukuma | Portfolio & Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm Neutral */
+            color: #4A4A4A;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .nav-link.active {
+            color: #0D9488; /* Teal Accent */
+            border-bottom-color: #0D9488;
+        }
+        .content-section {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        .content-section.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .prose h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0f766e;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .prose ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .image-placeholder {
+            background-color: #e5e7eb;
+            border: 2px dashed #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-weight: 500;
+            text-align: center;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <h1 class="text-xl md:text-2xl font-bold text-teal-700">Dan Mukuma</h1>
+                <nav id="main-nav" class="hidden md:flex space-x-4 lg:space-x-8 overflow-x-auto">
+                    <a data-target="home" class="nav-link active font-semibold border-b-2 border-transparent pb-1 whitespace-nowrap">Home</a>
+                    <a data-target="me" class="nav-link font-semibold border-b-2 border-transparent pb-1 whitespace-nowrap">Me</a>
+                    <a data-target="research" class="nav-link font-semibold border-b-2 border-transparent pb-1 whitespace-nowrap">My Research</a>
+                    <a data-target="art" class="nav-link font-semibold border-b-2 border-transparent pb-1 whitespace-nowrap">My Art</a>
+                    <a data-target="friends" class="nav-link font-semibold border-b-2 border-transparent pb-1 whitespace-nowrap">My Friends</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <section id="home" class="content-section active">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+                <div class="image-placeholder" style="height: 300px;">
+                    [ Hero Banner Image Placeholder ]<br>
+                    Recommended: 1200x600px | Subject: Landscape or Workspace | Vibe: Bright & Welcoming
+                </div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Welcome.</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Hello and welcome to my digital space. This platform serves as a central hub for my academic pursuits, creative projects, and professional connections. Feel free to explore the tabs above to learn more about who I am, the research I am conducting, the art I create, and the people who inspire me.
+                </p>
+            </div>
+        </section>
+
+        <section id="me" class="content-section">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-full md:w-1/3">
+                        <div class="image-placeholder aspect-square" style="border-radius: 50%;">
+                            [ Portrait Placeholder ]<br>
+                            Recommended: 800x800px<br>Subject: Professional Headshot
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3 prose max-w-none mt-0">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-2 mt-0">Hi, I'm Dan.</h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            I am currently a senior pursuing a Bachelor of Arts in Public Relations and Advertising at the University of Zambia. My journey blends a passion for strategic communication with a deep, enduring interest in Japanese culture, language, and institutions. 
+                        </p>
+                        <p class="text-lg text-gray-600 mb-4">
+                            As a former exchange student at the Tokyo University of Foreign Studies and the current president of the UNZA Japanese club, I am dedicated to bridging the cultural and academic gaps between Zambia and Japan. I am currently preparing for the MEXT scholarship to pursue my master's degree in Japan, aiming to further explore public diplomacy and institutional development. 
+                        </p>
+                        <p class="text-lg text-gray-600">
+                            Whether I am crafting advertising concepts, teaching Japanese, or exploring progressive fantasy novels, I thrive on connecting big ideas and bringing people together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="content-section">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg prose max-w-none">
+                <div class="image-placeholder" style="height: 250px;">
+                    [ Research Header Image Placeholder ]<br>
+                    Recommended: 1200x400px | Subject: Data, Japan-Zambia Relations, or Academic Setting
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-2 mt-0">My Research</h2>
+                <p class="text-xl font-semibold text-teal-700 mb-6">Theme: A Comparative Institutional Analysis of the "Human Capital Pipeline" in Chinese and Japanese Public Diplomacy [cite: 3]</p>
+                
+                <h3>Background and Problem Statement</h3>
+                <p>Human capital is a raw resource that requires a "refining" process to yield economic utility[cite: 5]. In Zambia, Japan possesses high-grade resources in ABE Initiative Alumni[cite: 6]. However, while the Chinese model (Confucius Institute) operates as a "Closed Loop" System—integrating training directly into the labor needs of Chinese SOEs—the Japanese model remains an "Open Loop"[cite: 7]. This is a Governance Failure because the State extracts and processes the education resource but lacks the Intermediary Organizations needed to re-integrate talent into the economic pipeline[cite: 8]. Consequently, this results in "resource leakage," where Japanese-trained talent is underutilized or lost to competitors[cite: 9].</p>
+
+                <h3>The "Translation Gap" in Hito-zukuri</h3>
+                <p>A key focus of my research is the "Translation Gap" in <em>Hito-zukuri</em> (Making People)[cite: 10, 12]. Vernacular concepts become "untranslatable" when decoupled from their origin[cite: 11]. In Japan, <em>Hito-zukuri</em> implies a social contract of long-term employment [cite: 12], whereas in Zambia, it is interpreted as mere "credentialing" for individual mobility[cite: 13]. As a result, Japanese SMEs face prohibitive transaction costs because they lack the institutional "translators" to navigate this semantic gap[cite: 14].</p>
+
+                <h3>Research Questions</h3>
+                <ul>
+                    <li>What specific institutional barriers prevent Japanese SMEs from utilizing ABE graduates as "Market Navigators"? [cite: 16]</li>
+                    <li>How do the "exit strategies" in the charter documents of JICA vs. Hanban differ regarding human capital re-integration? [cite: 17]</li>
+                    <li>Can the University serve as the missing Intermediary Organization to lower these transaction costs? [cite: 18]</li>
+                </ul>
+
+                <h3>Methodology</h3>
+                <p>My methodology includes <strong>Institutional Mapping</strong> through a comparative audit of JICA and Confucius Institute policy frameworks[cite: 20]. I will also conduct an <strong>"Intermediary" Audit</strong> using semi-structured interviews with JICA coordinators and SME stakeholders [cite: 21], and apply <strong>Semantic Analysis</strong> to categorize policy terms that fail to translate into local economic practice[cite: 22].</p>
+            </div>
+        </section>
+
+        <section id="art" class="content-section">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">My Art</h2>
+                <div class="image-placeholder mx-auto" style="height: 300px; max-width: 500px;">
+                    [ Art Featured Image Placeholder ]<br>
+                    Recommended: 1080x1080px (Square)<br>Subject: Your best or most recent artwork
+                </div>
+                <p class="text-lg text-gray-600 mb-8">Take a look at my latest creative projects, sketches, and visual designs over on my Instagram page.</p>
+                <a href="https://www.instagram.com/danielmukuma/" target="_blank" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-md">
+                    View My Instagram
+                </a>
+            </div>
+        </section>
+
+        <section id="friends" class="content-section">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Connections & Collaborators</h2>
+                <p class="text-lg text-gray-600 mb-8">A curated space for the people and peers who inspire me, collaborate with me, and push me forward.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <a href="#" class="block p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-md transition duration-300 text-center">
+                        <div class="image-placeholder mx-auto aspect-square mb-4" style="border-radius: 50%; width: 100px; height: 100px; padding: 0;">
+                            400x400
+                        </div>
+                        <h4 class="font-bold text-gray-800">Friend / Colleague 1</h4>
+                        <p class="text-sm text-teal-600 mt-1">Visit Profile &rarr;</p>
+                    </a>
+                    <a href="#" class="block p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-md transition duration-300 text-center">
+                        <div class="image-placeholder mx-auto aspect-square mb-4" style="border-radius: 50%; width: 100px; height: 100px; padding: 0;">
+                            400x400
+                        </div>
+                        <h4 class="font-bold text-gray-800">Friend / Colleague 2</h4>
+                        <p class="text-sm text-teal-600 mt-1">Visit Profile &rarr;</p>
+                    </a>
+                    <a href="#" class="block p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-teal-500 hover:shadow-md transition duration-300 text-center">
+                        <div class="image-placeholder mx-auto aspect-square mb-4" style="border-radius: 50%; width: 100px; height: 100px; padding: 0;">
+                            400x400
+                        </div>
+                        <h4 class="font-bold text-gray-800">Friend / Colleague 3</h4>
+                        <p class="text-sm text-teal-600 mt-1">Visit Profile &rarr;</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainNav = document.getElementById('main-nav');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            mainNav.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    const targetId = e.target.dataset.target;
+                    
+                    // Update Active Link State
+                    mainNav.querySelectorAll('a').forEach(link => link.classList.remove('active'));
+                    e.target.classList.add('active');
+
+                    // Show Target Content Section
+                    contentSections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === targetId) {
+                            section.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
